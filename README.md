@@ -3,7 +3,7 @@
 
 A low-code mobile app built with Power Apps that allows you to **create users in Microsoft Entra ID (Azure AD)** on the go, using Power Automate and Microsoft Graph API.
 
-## 🚀 Overview
+##  Overview
 
 This project enables IT admins, HR teams, or onboarding staff to create Entra ID users from their phone — no need to access the Azure portal. It's built using:
 
