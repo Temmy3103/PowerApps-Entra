@@ -125,6 +125,7 @@ MicrosoftEntraID.CreateUser(
     }
 );
 ```
+![image](https://github.com/user-attachments/assets/a7082fbb-b98a-4a41-898b-e3acb0df3fa2)
 
 ---
 
