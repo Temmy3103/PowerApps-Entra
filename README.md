@@ -1,9 +1,8 @@
-# PowerApps-Entra
-#  Power Apps Mobile User Creator for Microsoft Entra ID (Azure AD)
+# 📱 Power Apps Mobile User Creator for Microsoft Entra ID (Azure AD)
 
 A low-code mobile app built with Power Apps that allows you to **create users in Microsoft Entra ID (Azure AD)** on the go, using Power Automate and Microsoft Graph API.
 
-##  Overview
+## 🚀 Overview
 
 This project enables IT admins, HR teams, or onboarding staff to create Entra ID users from their phone — no need to access the Azure portal. It's built using:
 
@@ -14,7 +13,7 @@ This project enables IT admins, HR teams, or onboarding staff to create Entra ID
 
 ---
 
-## Tools & Technologies
+## 🧰 Tools & Technologies
 
 | Tool              | Purpose                                 |
 |-------------------|-----------------------------------------|
@@ -25,7 +24,7 @@ This project enables IT admins, HR teams, or onboarding staff to create Entra ID
 
 ---
 
-##  Features
+## 📲 Features
 
 - Mobile-friendly form for user creation
 - Automatically triggers Microsoft Graph API
@@ -34,9 +33,8 @@ This project enables IT admins, HR teams, or onboarding staff to create Entra ID
 - Toggle to enable/disable account creation
 
 ---
-![My Logo](![image](https://github.com/user-attachments/assets/e6d80628-773a-43fd-a3aa-0595bb7695b3)
 
-##  App Fields
+## 🧱 App Fields
 
 The app form includes:
 
@@ -53,7 +51,7 @@ The app form includes:
 
 ---
 
-##  Flow Logic (Power Automate)
+## 🔄 Flow Logic (Power Automate)
 
 1. Triggered from Power Apps with form data
 2. Uses HTTP action to call Microsoft Graph
@@ -82,27 +80,26 @@ The app form includes:
     "+123456789"
   ]
 }
- Azure App Registration Setup
-Go to Azure Portal > App registrations
+```
 
-Create a new registration
+---
 
-Add API permissions:
+## 🔐 Azure App Registration Setup
 
-User.ReadWrite.All
+1. Go to **Azure Portal > App registrations**
+2. Create a new registration
+3. Add API permissions:
+   - `User.ReadWrite.All`
+   - `Directory.ReadWrite.All`
+4. Grant admin consent
+5. Create a **client secret**
+6. Use the **client ID**, **tenant ID**, and **secret** in Power Automate's HTTP action
 
-Directory.ReadWrite.All
+---
 
-Grant admin consent
+## 🧠 Power Apps Code Snippet
 
-Create a client secret
-
-Use the client ID, tenant ID, and secret in Power Automate's HTTP action
-
-Power Apps Code Snippet
-powerapps
-Copy
-Edit
+```powerapps
 ClearCollect(
     businessPhoneCol,
     { Value: BusinessNumberTextInput2_1.Text }
@@ -127,16 +124,42 @@ MicrosoftEntraID.CreateUser(
         businessPhones: businessPhoneCol
     }
 );
+```
 
-)
+---
 
+## ✅ Final Output
 
-
-Final Output
 Once submitted, a new user is created in Entra ID within seconds. Ideal for:
 
-Field onboarding
+- Field onboarding
+- Remote IT teams
+- Events or training sessions
 
-Remote IT teams
+---
 
-Events or training sessions
+## 📦 Coming Soon
+
+- Template export
+- Reusable connector setup
+- Error handling best practices
+
+---
+
+## 🙌 Contribution
+
+Pull requests and ideas are welcome. This is a community solution — feel free to fork and improve!
+
+---
+
+## 📬 Contact
+
+Want to collaborate, get a walkthrough, or request the template?
+
+Message me on [LinkedIn](https://linkedin.com) or start a discussion.
+
+---
+
+## 🏷️ Tags
+
+`#PowerApps` `#MicrosoftGraph` `#AzureAD` `#EntraID` `#LowCode` `#PowerAutomate` `#ITAutomation`
