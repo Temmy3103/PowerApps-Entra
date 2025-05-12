@@ -1,4 +1,4 @@
-# 📱 Power Apps Mobile User Creator for Microsoft Entra ID (Azure AD)
+#  Power Apps Mobile User Creator for Microsoft Entra ID (Azure AD)
 
 A low-code mobile app built with Power Apps that allows you to **create users in Microsoft Entra ID (Azure AD)** on the go, using Power Automate and Microsoft Graph API.
 
@@ -13,7 +13,7 @@ This project enables IT admins, HR teams, or onboarding staff to create Entra ID
 
 ---
 
-## 🧰 Tools & Technologies
+##  Tools & Technologies
 
 | Tool              | Purpose                                 |
 |-------------------|-----------------------------------------|
@@ -34,7 +34,7 @@ This project enables IT admins, HR teams, or onboarding staff to create Entra ID
 
 ---
 
-## 🧱 App Fields
+##  App Fields
 
 The app form includes:
 
@@ -51,7 +51,7 @@ The app form includes:
 
 ---
 
-## 🔄 Flow Logic (Power Automate)
+##  Flow Logic (Power Automate)
 
 1. Triggered from Power Apps with form data
 2. Uses HTTP action to call Microsoft Graph
@@ -84,7 +84,7 @@ The app form includes:
 
 ---
 
-## 🔐 Azure App Registration Setup
+##  Azure App Registration Setup
 
 1. Go to **Azure Portal > App registrations**
 2. Create a new registration
@@ -97,7 +97,7 @@ The app form includes:
 
 ---
 
-## 🧠 Power Apps Code Snippet
+##  Power Apps Code Snippet
 
 ```powerapps
 ClearCollect(
@@ -128,7 +128,7 @@ MicrosoftEntraID.CreateUser(
 
 ---
 
-## ✅ Final Output
+##  Final Output
 
 Once submitted, a new user is created in Entra ID within seconds. Ideal for:
 
@@ -138,23 +138,9 @@ Once submitted, a new user is created in Entra ID within seconds. Ideal for:
 
 ---
 
-## 📦 Coming Soon
 
-- Template export
-- Reusable connector setup
-- Error handling best practices
 
----
 
-## 🙌 Contribution
-
-Pull requests and ideas are welcome. This is a community solution — feel free to fork and improve!
-
----
-
-## 📬 Contact
-
-Want to collaborate, get a walkthrough, or request the template?
 
 Message me on [LinkedIn](https://linkedin.com) or start a discussion.
 
